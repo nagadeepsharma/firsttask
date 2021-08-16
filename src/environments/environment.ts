@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  logo:'../assets/images/kudosbeta.PNG',
+  projects:['kudoswall','prokudoswall','kudoswall.edu']
 };
 
 /*

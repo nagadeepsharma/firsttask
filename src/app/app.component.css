@@ -1,0 +1,31 @@
+.box{
+    background-color: #f4f4f4;
+    width:450px;
+    height: 400px;
+    
+}
+.logo{
+    width:100%;
+
+}
+.box-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: fit-content;
+}
+.box-body-items{
+    margin: 20px 0px;
+    height: fit-content;
+    width: 80%;
+    background-color:#4BBC9C;
+    justify-content: start;
+
+}
+p{
+    color:whitesmoke;
+    margin-left: 5px;
+    font-weight:700;
+    letter-spacing:1px;
+}
