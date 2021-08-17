@@ -1,8 +1,10 @@
-<div class="box">
-  <div class="box-head"><a href="https://www.kudoswall.com/"><img class="logo" src={{projectsInfo.logo}}></a></div>
-  <div class="box-body" *ngFor="let projectName of projectsInfo.projectList">
-    <div class="box-body-items">
-      <p>{{projectName}}</p>
+<div class="nav">
+  <div class="nav-head"><a routerLink="/"><img class="logo" src={{projectsInfo.logo}}></a></div>
+  <div class="nav-body" *ngFor="let project of projectsInfo.projectList">
+    <div class="items">
+      <a routerLink={{project.url}}>{{project.name}}</a>
     </div>
   </div>
 </div>
+<router-outlet></router-outlet>
+
