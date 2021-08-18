@@ -7,7 +7,7 @@ import { environment } from 'src/environments/environment';
     <h1>
       prokudoswall works!
     </h1>
-    <a href={{source}}>Visit</a>
+    <a href={{source[0].source}}>Visit</a>
   `,
   styleUrls: ['./prokudoswall.component.css']
 })
@@ -17,6 +17,6 @@ export class ProkudoswallComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  source=environment.projects[1].source
+  source=environment.projects.filter((s)=>s.name=='pro.kudoswall')
   
 }

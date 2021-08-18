@@ -7,16 +7,15 @@ import { environment } from 'src/environments/environment';
     <h1>
       kudoswalldiscover works!
     </h1>
-    <a href={{source}}>Visit</a>
+    <a href={{source[0].source}}>Visit</a>
   `,
   styleUrls: ['./kudoswalldiscover.component.css']
 })
 export class KudoswalldiscoverComponent implements OnInit {
 
-  constructor() { }
-
+  constructor() {}
   ngOnInit(): void {
   }
-  source=environment.projects[1].source
+  source=environment.projects.filter((s)=>s.name=='discover.kudoswall')
 
 }
