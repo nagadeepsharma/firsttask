@@ -7,6 +7,8 @@ import { KudoswalleduComponent } from './kudoswalledu/kudoswalledu.component';
 import { KudoswalldiscoverComponent } from './kudoswalldiscover/kudoswalldiscover.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -14,11 +16,14 @@ import { HomeComponent } from './home/home.component';
     ProkudoswallComponent,
     KudoswalleduComponent,
     KudoswalldiscoverComponent,
-    HomeComponent
+    HomeComponent,
+    LoginComponent
   ],
   imports: [
+    FormsModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

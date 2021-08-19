@@ -3,6 +3,7 @@ import { Routes,RouterModule } from "@angular/router";
 import { HomeComponent } from "./home/home.component";
 import { KudoswalldiscoverComponent } from "./kudoswalldiscover/kudoswalldiscover.component";
 import { KudoswalleduComponent } from "./kudoswalledu/kudoswalledu.component";
+import { LoginComponent } from "./login/login.component";
 import { ProkudoswallComponent } from "./prokudoswall/prokudoswall.component";
 
 const routes:Routes=[
@@ -17,7 +18,11 @@ const routes:Routes=[
     },
     {
         path:'',component:HomeComponent
+    },
+    {
+        path:'login',component:LoginComponent
     }
+
 ];
 @NgModule({
     imports:[RouterModule.forRoot(routes)],

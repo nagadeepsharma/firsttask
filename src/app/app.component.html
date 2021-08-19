@@ -4,7 +4,9 @@
     <div class="items">
       <a routerLink={{project.url}}>{{project.name}}</a>
     </div>
-  </div>
+    </div>
+    <a *ngIf="!isLogged" routerLink="/login">Login</a>
+    <a *ngIf="isLogged" style="cursor: pointer;" (click)="logout()">Logout</a>
 </div>
 <router-outlet></router-outlet>
 

@@ -7,8 +7,12 @@ export const environment = {
   logo:'../assets/images/kudosbeta.PNG',
   projects:[{name:'edu.kudoswall',url:'/kudoswalledu',source:'https://www.kudoswall.com'},
             {name:'pro.kudoswall',url:'/prokudoswall',source:'https://www.kudoswall.com'},
-            {name:'discover.kudoswall',url:'/kudoswalldiscover',source:'https://www.kudoswall.com'}
-          ]
+            {name:'discover.kudoswall',url:'/kudoswalldiscover',source:'https://www.kudoswall.com'},
+          ],
+  user:{
+    username:'kudoswall',
+    password:'kudoswall'
+  }
 };
 
 /*
