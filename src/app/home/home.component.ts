@@ -1,10 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-
 @Component({
   selector: 'app-home',
   template: `
     <h1>
-      home works!
+      <app-todo></app-todo>
     </h1>
   `,
   styleUrls: ['./home.component.css']

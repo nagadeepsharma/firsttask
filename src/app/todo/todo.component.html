@@ -1,0 +1,11 @@
+<div class="todoform">
+<form (ngSubmit)="createtodo()" [formGroup]="todoform" class="todof">
+    <input type="text" formControlName="inputtext" class="todoname">
+    <input type="submit" class="submitb">
+</form>
+<div *ngFor="let todo of todos; let i=index;" class="list">
+    <p>{{todo.content}}</p>
+    <button (click)="edittodo(i)">edit</button>
+    <button (click)="deletetodo(i)">Delete</button>
+</div>
+</div>

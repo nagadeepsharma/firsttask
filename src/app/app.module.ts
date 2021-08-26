@@ -8,7 +8,8 @@ import { KudoswalldiscoverComponent } from './kudoswalldiscover/kudoswalldiscove
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { TodoComponent } from './todo/todo.component'
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms'
     KudoswalleduComponent,
     KudoswalldiscoverComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    TodoComponent
   ],
   imports: [
     FormsModule,
